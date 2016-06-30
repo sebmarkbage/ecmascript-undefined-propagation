@@ -82,7 +82,7 @@ If you truly want to protect against this then adding strong typing through dyna
 
 #### Why the special case?
 
-These are the only types that currently DOES throw so this is actually getting rid of a special case. `boolean`, `number`, `string` and `symbol` all doesn't throw. It's no weirder that `123.foo()` not throwing.
+These are the only types that currently DO throw so this is actually getting rid of a special case. `boolean`, `number`, `string` and `symbol` all don't throw. It's no weirder that `123.foo` not throwing.
 
 `Object.assign` and many others already special case `null` and `undefined` to be treated roughly like an empty object anyway because it is so convenient.
 
@@ -100,7 +100,7 @@ For example, type systems generally want to warn you if you access a missing pro
 
 This is already a problem for the `a.b` case where `b` may or may not exist on `a` if `a` is a union type.
 
-JavaScript doesn't generally add syntax for the purpose of supporting type systems neither. It's up to the type systems to propose additional syntax for communicating this intent if you use them.
+JavaScript doesn't generally add syntax for the purpose of supporting type systems either. It's up to the type systems to propose additional syntax for communicating this intent if you use them.
 
 ### Why not existential or null propagator operator?
 
