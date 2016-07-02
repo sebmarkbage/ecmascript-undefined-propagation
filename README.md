@@ -50,7 +50,7 @@ delete a.b.c; // throws a TypeError
 
 ### Specification
 
-The specification changes simply changes the runtime semantics for property access and returns undefined in the case the baseValue is `null` or `undefined`.
+The specification simply changes the runtime semantics for property access and returns `undefined` in the case the baseValue is `null` or `undefined`.
 
 _MemberExpression_ : _MemberExpression_ __[__ _Expression_ __]__
 
